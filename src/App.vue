@@ -1,18 +1,21 @@
 <script>
-import PageTitle from './components/PageTitle.vue';
+import AppHeader from './components/header/AppHeader.vue';
 
 export default {
   components: {
-    PageTitle
+    AppHeader
   }
 }
 </script>
 
 <template>
-  <div>
-    <PageTitle/>
-  </div>
+  <header>
+      <AppHeader/>
+  </header>
+  <main></main>
+  <footer></footer>
 </template>
 
-<style scoped>
+<style lang="scss">
+@import './style/global.scss';
 </style>
