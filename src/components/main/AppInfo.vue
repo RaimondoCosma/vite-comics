@@ -46,13 +46,13 @@ section {
 
     .container {
         display: flex;
+        justify-content: space-around;
         padding: 2.8125rem;
 
         .cards {
             display: flex;
             align-items: center;
             max-height: 3.75rem;
-            width: calc(100% / 5);
             color: var(--lighter-color);
 
             a {
