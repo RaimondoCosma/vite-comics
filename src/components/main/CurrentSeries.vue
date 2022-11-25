@@ -118,9 +118,22 @@ section {
   background-color: var(--darkest-color);
 
   .container {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     padding: 3.125rem 0;
+
+    &::before {
+      position: absolute;
+      content: "CURRENT SERIES";
+      font-size: 1.25rem;
+      color: var(--lighter-color);
+      font-weight: bold;
+      left: 0;
+      top: -1.25rem;
+      background-color: var(--primary-color-dark);
+      padding: 0.625rem 1.25rem;
+    }
   }
 }
 .product {
