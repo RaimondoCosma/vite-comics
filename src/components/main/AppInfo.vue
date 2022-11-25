@@ -20,7 +20,7 @@ export default {
             title: 'COMIC SHOP LOCATOR'
             },
             {
-            img: 'src/assets/img/buy-dc-power-visa.png',
+            img: 'src/assets/img/buy-dc-power-visa.svg',
             title: 'DC POWER VISA'
             },
         ]
