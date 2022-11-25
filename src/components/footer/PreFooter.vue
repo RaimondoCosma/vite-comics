@@ -72,7 +72,6 @@ export default {
             }
 
             h3 {
-                font-size: 1.25rem;
                 color: var(--lighter-color);
                 margin-bottom: 1.25rem;
                 margin-top: 3.125rem;

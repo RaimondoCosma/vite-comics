@@ -48,7 +48,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.875rem 0;
+    padding: 1.875rem 1.25rem;
 
     button {
         color: var(--lighter-color);
