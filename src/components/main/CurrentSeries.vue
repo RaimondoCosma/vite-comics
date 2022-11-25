@@ -1,5 +1,11 @@
 <script>
+import AppCard from "../commons/AppCard.vue";
+
 export default {
+  components: {
+    AppCard,
+  },
+
   data() {
     return {
       dcSeries: [
@@ -93,6 +99,34 @@ export default {
 };
 </script>
 
-<template></template>
+<template>
+  <section>
+    <div class="container">
+      <AppCard
+        class="product"
+        v-for="serie in dcSeries"
+        :img="serie.thumb"
+        :alt="serie.series"
+        :title="serie.series"
+      />
+    </div>
+  </section>
+</template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+section {
+  background-color: var(--darkest-color);
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3.125rem 0;
+  }
+}
+.product {
+  margin: 0 1.25rem;
+  width: calc((100% / 6) - 2.5rem);
+  color: var(--lighter-color);
+  text-transform: uppercase;
+}
+</style>

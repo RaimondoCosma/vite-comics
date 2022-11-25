@@ -1,21 +1,20 @@
 <script>
-import AppContent from './AppContent.vue';
-import AppInfo from './AppInfo.vue';
+import CurrentSeries from "./CurrentSeries.vue";
+import AppInfo from "./AppInfo.vue";
 
 export default {
   components: {
-    AppContent,
+    CurrentSeries,
     AppInfo,
-  }
-}
+  },
+};
 </script>
 
 <template>
-    <main>        
-        <AppContent/>
-        <AppInfo/>
-    </main>
+  <main>
+    <CurrentSeries />
+    <AppInfo />
+  </main>
 </template>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>
