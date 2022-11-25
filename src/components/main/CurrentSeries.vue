@@ -145,6 +145,16 @@ section {
   width: calc((100% / 6) - 2.5rem);
   color: var(--lighter-color);
   text-transform: uppercase;
+
+  @media screen and (max-width: 992px) {
+    width: calc(100% / 4 - 40px);
+  }
+  @media screen and (max-width: 768px) {
+    width: calc(100% / 3 - 40px);
+  }
+  @media screen and (max-width: 576px) {
+    width: calc(100% / 2 - 40px);
+  }
 }
 .btn {
   text-align: center;

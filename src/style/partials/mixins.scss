@@ -1,0 +1,18 @@
+/* --------------------
+    MIXINS MEDIA QUERIES
+-------------------- */
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@mixin media-breackpoint-up($size) {
+  $value: map-get($breakpoints, $size);
+  @media screen and (max-width: $value) {
+    @content;
+  }
+}

@@ -94,6 +94,10 @@ export default {
       a {
         text-decoration: none;
         color: var(--secondary-color);
+        transition: color 0.3s linear;
+        &:hover {
+          color: var(--lighter-color);
+        }
       }
     }
 

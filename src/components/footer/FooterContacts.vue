@@ -58,6 +58,10 @@ export default {
     background-color: transparent;
     border: 0.0625rem solid var(--primary-color);
     cursor: pointer;
+    transition: background-color 0.3s linear;
+    &:hover {
+      background-color: var(--secondary-color);
+    }
   }
 
   ul {

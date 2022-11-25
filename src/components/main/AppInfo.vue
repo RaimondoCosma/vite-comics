@@ -71,6 +71,9 @@ section {
 
       span {
         cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
