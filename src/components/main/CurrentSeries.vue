@@ -109,6 +109,9 @@ export default {
         :alt="serie.series"
         :title="serie.series"
       />
+      <div class="btn">
+        <button>LOAD MORE</button>
+      </div>
     </div>
   </section>
 </template>
@@ -121,13 +124,14 @@ section {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    color: var(--lighter-color);
     padding: 3.125rem 0;
 
     &::before {
       position: absolute;
       content: "CURRENT SERIES";
       font-size: 1.25rem;
-      color: var(--lighter-color);
       font-weight: bold;
       left: 0;
       top: -1.25rem;
@@ -141,5 +145,15 @@ section {
   width: calc((100% / 6) - 2.5rem);
   color: var(--lighter-color);
   text-transform: uppercase;
+}
+.btn {
+  text-align: center;
+  button {
+    color: var(--lighter-color);
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.625rem 3.125rem;
+    cursor: pointer;
+  }
 }
 </style>
