@@ -168,6 +168,7 @@ ul {
     position: fixed;
     top: 73px;
     right: -230px;
+    height: 100vh;
     width: 200px;
     box-shadow: -20px 7px 10px 0px #000000;
   }
