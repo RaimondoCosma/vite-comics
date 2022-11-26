@@ -11,16 +11,28 @@ export default {
 </script>
 
 <template>
-  <header class="container">
-    <AppLogo />
-    <AppNav />
+  <header>
+    <div class="nav-container container">
+      <AppLogo />
+      <AppNav />
+    </div>
   </header>
 </template>
 
 <style lang="scss" scoped>
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--lighter-color);
+  z-index: 999;
+  box-shadow: 0px 2px 10px 0px #000000;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 </style>
