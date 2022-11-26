@@ -48,11 +48,20 @@ section {
     display: flex;
     justify-content: space-around;
     padding: 2.8125rem;
+    @media screen and (max-width: 768px) {
+      overflow-x: auto;
+      justify-content: flex-start;
+      padding: 2.8125rem 0;
+    }
 
     .cards {
       display: flex;
       align-items: center;
       color: var(--lighter-color);
+      @media screen and (max-width: 768px) {
+        width: 9.375rem;
+        flex-shrink: 0;
+      }
 
       a {
         display: flex;
@@ -61,6 +70,11 @@ section {
         width: 3.75rem;
         height: 3.75rem;
         margin-right: 0.625rem;
+
+        @media screen and (max-width: 992px) {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
 
         img {
           display: block;
@@ -71,6 +85,9 @@ section {
 
       span {
         cursor: pointer;
+        @media screen and (max-width: 992px) {
+          font-size: 0.875rem;
+        }
         &:hover {
           text-decoration: underline;
         }
