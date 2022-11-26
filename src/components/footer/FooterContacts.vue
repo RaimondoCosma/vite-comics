@@ -38,7 +38,9 @@ export default {
           <a href="#"><h3>FOLLOW US</h3></a>
         </li>
         <li v-for="contact in contacts">
-          <a href="#"><img :src="contact.img" :alt="contact.contactName" /></a>
+          <a class="icons" href="#"
+            ><img :src="contact.img" :alt="contact.contactName"
+          /></a>
         </li>
       </ul>
     </div>
@@ -62,6 +64,9 @@ export default {
     &:hover {
       background-color: var(--secondary-color);
     }
+    @media screen and (max-width: 576px) {
+      padding: 0.625rem;
+    }
   }
 
   ul {
@@ -71,11 +76,23 @@ export default {
 
     li:not(:last-child) {
       margin-right: 1.25rem;
+      @media screen and (max-width: 576px) {
+        margin-right: 0.625rem;
+      }
     }
 
     a {
       text-decoration: none;
       color: var(--primary-color-dark);
+    }
+  }
+  @media screen and (max-width: 576px) {
+    li h3 {
+      font-size: 1rem;
+    }
+    .icons img {
+      width: 1.5625rem;
+      height: 1.5625rem;
     }
   }
 }
