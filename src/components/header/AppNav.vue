@@ -71,7 +71,7 @@ nav {
   height: 0.3125rem;
   background-color: var(--darkest-color);
   border-radius: 0.3125rem;
-  z-index: 100;
+  z-index: 999;
   display: none;
   transition: 0.2s background-color linear 0.2s;
 
@@ -166,11 +166,13 @@ ul {
   @media screen and (max-width: 768px) {
     flex-direction: column;
     position: fixed;
-    top: 73px;
-    right: -230px;
-    height: 100vh;
-    width: 200px;
-    box-shadow: -20px 7px 10px 0px #000000;
+    top: 78px;
+    right: -270px;
+    height: 25rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 240px;
+    box-shadow: -10px 7px 10px 0px #000000;
   }
 }
 .show-ul {
